@@ -1,0 +1,208 @@
+/* singlepage設定　投稿記事表示　縦列 */
+
+
+/* ここからが２列目 */
+
+#container-single {
+    max-width: 1024px;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+}
+
+.main-img {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: floralwhite;
+}
+
+#mainkizi {
+    width: 100%;
+    max-height: auto;
+    color: #5d627b;
+    background: white;
+    border-top: solid 8px #5d627b;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.22);
+}
+
+.time {
+    padding-left: 20px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.singlecontent {
+    width: 100%;
+}
+
+.singlecontent h2 {
+    border-top: solid 2px rgba(138, 126, 245, 0.8);
+    border-left: solid 10px rgba(138, 126, 245);
+    width: fit-content;
+    margin-left: 2%;
+    padding-left: 2%;
+    padding-right: 6%;
+    line-height: 60px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(204, 199, 248, 0.1);
+    border-radius: 3px;
+}
+
+.singlecontent img {
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.2));
+    margin: 0.6rem 0;
+    height: auto;
+}
+
+.singlecontent p {
+    font-size: 22px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    padding: 0 20px;
+    line-height: 46px;
+}
+
+.singlecontent ul {
+    width: fit-content;
+    background-color: rgb(141, 174, 235);
+    padding: 1em 2em;
+    margin: 0 auto;
+    border: rgb(15, 15, 216) 0.8px dotted;
+    list-style: circle;
+}
+
+.singlecontent ul li {
+    color: rgb(255, 252, 242);
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+
+/* singlepage設定　投稿記事表示　縦列ここまで */
+
+
+/* ここからが前後の記事へのボタン設定 */
+
+.backimg {
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.backimg a {
+    font-size: 16px;
+    margin: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    border-left: solid 4px #668ad8;
+    border-right: solid 4px #668ad8;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+.backimg a:hover {
+    background: #668ad8;
+    color: #FFF;
+}
+
+
+/* ここまでが２列目 */
+
+
+/* ここからが4列目 */
+
+
+/* singlepage　サイドバー設定　ここから */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+}
+
+.sidebar ul li {
+    line-height: 2.8em;
+    border-bottom: rgb(111, 111, 252) 0.1px solid;
+    padding-left: 2em;
+    width: 70%;
+}
+
+.sidebar ul li:hover {
+    line-height: 2.9em;
+    border-bottom: rgba(64, 64, 250, 0.822) 0.1px solid;
+    padding-left: 1.8em;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    text-align: start;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.a2a_kit {
+    padding: 2rem 0;
+}
+
+#s {
+    border: 0;
+    padding: 10px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    color: #aaa;
+    border: solid 1px #ccc;
+    width: 160px;
+}
+
+#s:focus {
+    border: solid 1px #EEA34A;
+}
+
+#searchsubmit {
+    border: solid 1px #ccc;
+    padding: 4px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+    background-image: -webkit-linear-gradient(top, #ddd, #aaa);
+    background-image: -moz-linear-gradient(top, #ddd, #aaa);
+    background-image: -ms-linear-gradient(top, #ddd, #aaa);
+    background-image: -o-linear-gradient(top, #ddd, #aaa);
+    background-image: linear-gradient(top, #ddd, #aaa);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#aaa', GradientType=0);
+}
+
+.textwidget p iframe {
+    height: 900px;
+    width: 300px;
+}
+
+
+/* ここまでが4列目 */

@@ -1,0 +1,270 @@
+/************************************
+** グローバルメニュー
+************************************/
+
+#navi {
+    width: 99%;
+    z-index: 30;
+}
+
+
+/*幅を整える場合はwidthを設定する*/
+
+.navi-in {
+    width: 100%;
+}
+
+.navi-in>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.navi-in>ul li {
+    max-width: 280px;
+    width: 100%;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+.navi-in>ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    display: block;
+}
+
+.navi-in>ul li a:hover {
+    border-top: solid 2px white;
+    background-color: black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+
+/* アイコンを挿入 */
+
+.navi-in>ul li::before {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    height: 100%;
+}
+
+.home::before {
+    content: url("../img/home.png");
+}
+
+.tech::before {
+    content: url("../img/tech.png");
+}
+
+.pro::before {
+    content: url("../img/pro.png");
+}
+
+.care::before {
+    content: url("../img/care.png");
+}
+
+.town::before {
+    content: url("../img/town.png");
+}
+
+.info::before {
+    content: url("../img/info.png");
+}
+
+
+/*サブメニュー*/
+
+.sub-menu {
+    background-color: rgb(22, 21, 21);
+    overflow: hidden;
+}
+
+.sub-menu li {
+    max-height: 0;
+}
+
+.sub-menu a {
+    position: relative;
+}
+
+.sub-menu a::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 0%;
+    background-color: whitesmoke;
+    left: 0px;
+    top: 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.sub-menu a:hover::before {
+    opacity: 1;
+    height: 100%;
+}
+
+
+/* ここからがレスポンシブ対応 */
+
+
+/* 小型PC、タブレット用は1100px以下に設定 */
+
+
+/* ハンバーガーメニューを1000px以下に設定 */
+
+
+/* スマホ用は480px以下に設定 */
+
+@media screen and (max-width:1200px) {
+    .navi-in>ul li::before {
+        position: absolute;
+        top: -20px;
+    }
+    .sub-menu a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .white {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(247, 247, 247);
+        z-index: 65;
+    }
+    /* ここから降ってくるメニュー */
+    #navi {
+        height: 70px;
+    }
+    #navi-in {
+        /*幅を整える場合はwidthを設定する*/
+        position: fixed;
+        max-height: 100vh;
+        max-width: 240px;
+        top: -700px;
+        right: 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .navi-in>ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navi-in>ul li {
+        max-width: 240px;
+        width: 100%;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        text-align: center;
+    }
+    .navi-in>ul li a {
+        border-top: solid 1px white;
+        text-decoration: none;
+        background-color: rgba(26, 1, 41, 0.959);
+        color: white;
+        line-height: 40px;
+        display: block;
+        padding-left: 30px;
+    }
+    .navi-in>ul li a:hover {
+        border-top: solid 2px white;
+        border-bottom: 3px solid white;
+        background-color: rgb(7, 15, 88);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-weight: bold;
+        padding-left: 34px;
+    }
+    /* アイコンを挿入 */
+    .navi-in>ul li::before {
+        position: absolute;
+        top: 6px;
+        left: 4px;
+        height: 100%;
+    }
+    /* ここまで降ってくるメニュー */
+    /* ここからサブメニュー */
+    .sub-menu {
+        background-color: rgb(22, 21, 21);
+        overflow: hidden;
+    }
+    .sub-menu li {
+        max-height: 0;
+    }
+    .sub-menu a {
+        position: relative;
+    }
+    .sub-menu a::before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: -40px;
+        top: 0px;
+        background-color: whitesmoke;
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+        opacity: 1;
+    }
+    .sub-menu a:hover::before {
+        width: 80px;
+        height: 80px;
+        left: -30px
+    }
+}
+
+
+/* ここからスマホ用は480px以下に設定 */
+
+@media screen and (max-width:480px) {
+    #navi {
+        height: 50px;
+    }
+    .navi-in>ul li a {
+        line-height: 2.8em;
+        padding-left: 0px;
+    }
+    .navi-in>ul li a:hover {
+        border-top: solid 1px white;
+        padding-left: 6px;
+    }
+    .navi-in>ul li::before {
+        display: none;
+    }
+    .sub-menu a::before {
+        width: 70px;
+        height: 80px;
+        left: -30px;
+        top: 0px;
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+    .sub-menu a:hover::before {
+        width: 60px;
+        height: 60px;
+        left: -30px;
+        top: 0px;
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+    }
+}

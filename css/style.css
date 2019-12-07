@@ -1,0 +1,673 @@
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* メインページ設定ここから */
+
+
+/* headerここから */
+
+header {
+    width: 100%;
+    z-index: 50;
+}
+
+.header {
+    background-color: rgba(22, 21, 21, 0.808);
+    width: 100%;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+/* パンくずリスト */
+
+.space-breadcrumb {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(247, 247, 247);
+    z-index: 300;
+}
+
+#breadcrumb {
+    height: auto;
+}
+
+#breadcrumb ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#breadcrumb ul li {
+    padding: 6px 16px;
+}
+
+#breadcrumb ul li span {
+    font-size: 1em;
+}
+
+#breadcrumb ul li a {
+    position: relative;
+}
+
+#breadcrumb ul li a::after {
+    position: absolute;
+    content: ">";
+    right: -20px;
+    bottom: 0.1em;
+}
+
+
+/* headerここまで */
+
+
+/* ここからメインボディ */
+
+#body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#container {
+    max-width: 1024px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* トップロゴ */
+
+.left-top {
+    position: absolute;
+    width: 160px;
+    top: 80px;
+    left: -9rem;
+    z-index: 90;
+}
+
+
+/* ここからメイン画像 */
+
+main {
+    width: 97%;
+    position: relative;
+}
+
+
+/* ここからメイン画像調整 */
+
+.maincont {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.mainbox {
+    width: 96%;
+}
+
+
+/* ここまでメイン画像調整 */
+
+
+/* ここからロゴ調整 */
+
+.right-maxwi {
+    width: 100%;
+    z-index: 30;
+    position: absolute;
+    bottom: -15%;
+    right: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.right-bottom {
+    width: 46%;
+    height: 40%;
+    max-width: 180px;
+    max-height: 90px;
+    opacity: 0.6;
+}
+
+.splogo {
+    position: absolute;
+    max-height: 30%;
+    max-width: 70%;
+    width: 65%;
+    right: 10%;
+    bottom: 150px;
+    padding-left: 10px;
+    z-index: -1000;
+}
+
+
+/* ここまでロゴ調整 */
+
+
+/* ここまでメイン画像 */
+
+
+/* ここまでメイン画像下のメッセージ、レスポンシブで２段になる */
+
+.font {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+/* ここからが投稿画面 */
+
+.section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contentwrap {
+    margin: 0 auto;
+    max-width: 1124px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.card {
+    width: 320px;
+    height: auto;
+    margin: 0 0 30px 0;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    background-color: white;
+}
+
+.card img {
+    width: 320px;
+    height: 200px;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+    box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.card p {
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+}
+
+.card-space {
+    padding: 0 16px 0 14px;
+}
+
+.line-space {
+    height: 50px;
+}
+
+.card-space span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: blue;
+    font-size: 14px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+    margin-right: 15.46px;
+    display: inline-block;
+    height: 50px;
+}
+
+.card-space span:before {
+    position: absolute;
+    top: 2.3em;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.card-space span:hover:before {
+    width: 130%;
+}
+
+.reserch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* ここまでが投稿画面 */
+
+
+/* ここからが人気投稿画面 */
+
+.ranking {
+    background-color: rgba(0, 0, 255, 0.199);
+    padding: 10px 20px;
+}
+
+.ranking-body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.ranking-case a {
+    text-decoration: none;
+    color: black;
+}
+
+.popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 600px;
+    height: auto;
+    margin: 0 0 30px 0;
+    position: relative;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    background-color: white;
+    overflow: hidden;
+}
+
+.img-space {
+    background-color: white;
+}
+
+.popular-title {
+    background-color: white;
+    text-align: center;
+}
+
+.popular img {
+    width: 320px;
+    height: auto;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.popular img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.popular:hover {
+    -webkit-box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+    box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.popular p {
+    line-height: 24px;
+    font-size: 1em;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+}
+
+.popular-space {
+    padding: 8px 16px 0 14px;
+    background-color: white;
+    z-index: 1;
+}
+
+.popular-space span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: blue;
+    font-size: 14px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+    margin-right: 15.46px;
+    display: inline-block;
+    height: 50px;
+}
+
+.popular-space span:before {
+    position: absolute;
+    top: 2.3em;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.popular-space span:hover:before {
+    width: 130%;
+}
+
+
+/* 
+ここからがショウケースのピックアップ欄 */
+
+.show-case {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.show-case h3 {
+    margin: 10px 0;
+}
+
+.project {
+    width: 90%;
+    height: 180px;
+    background-color: rgba(179, 211, 212, 0.788);
+    margin: 6px 0;
+    border-radius: 6px;
+    position: relative;
+    display: block;
+}
+
+.over-lay {
+    position: absolute;
+    z-index: -50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.over-text {
+    position: absolute;
+    z-index: -50;
+    text-align: center;
+    top: 70%;
+    width: 100%;
+    color: white;
+}
+
+.project:hover .over-lay {
+    z-index: 50;
+    opacity: 0.8;
+    background-color: black;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.project:hover .over-text {
+    z-index: 55;
+    top: 50%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.project img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.show-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 6px;
+}
+
+
+/* ここからがfooter */
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 5px 0;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ここまでがfooter */
+
+
+/* これが最初に戻るボタン */
+
+.kan {
+    position: fixed;
+    width: 50px;
+    bottom: 30px;
+    right: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+/* これが最初に戻るボタン */
+
+
+/* ここからがページを6件ごとに切り替えるボタンの表示 */
+
+.screen-reader-text {
+    display: none;
+}
+
+.nav-links {
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav-links div a {
+    font-size: 16px;
+    margin: 0 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    background: #668ad8;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+}
+
+.nav-links div a:hover {
+    background-color: rgba(0, 0, 255, 0.219);
+    color: blue;
+}
+
+.nav-links div a:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    /*影を小さく*/
+    border-bottom: none;
+}
+
+
+/* ここまでがページを6件ごとに切り替えるボタンの表示 */
+
+
+/* メインページ設定ここまで */
+
+
+/* ここからがレスポンシブ対応 */
+
+
+/* 小型PC、タブレット用は1100px以下に設定 */
+
+
+/* ハンバーガーメニューを1000px以下に設定 */
+
+
+/* スマホ用は480px以下に設定 */
+
+@media screen and (max-width:1200px) {
+    #pcslide {
+        display: none;
+    }
+    .left-top {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        width: 70px;
+        height: 60px;
+        z-index: 490;
+    }
+    /* ここからが人気投稿画面 */
+    .ranking {
+        background-color: rgba(0, 0, 255, 0.342);
+        padding: 10px 20px;
+    }
+    .ranking-body {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .popular {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 320px;
+        height: auto;
+        margin: 0 0 30px 0;
+    }
+    .show-case {
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: initial;
+        -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+        flex-direction: initial;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .show-case h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .project {
+        width: 260px;
+        height: 180px;
+        background-color: rgba(179, 211, 212, 0.788);
+        margin: 6px 0;
+        border-radius: 6px;
+        position: relative;
+        display: block;
+    }
+}

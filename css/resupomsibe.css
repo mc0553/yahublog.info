@@ -1,0 +1,594 @@
+@media screen and (min-width:1200px) {
+    #spslide {
+        display: none;
+    }
+    .splogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header {
+        background-color: rgb(247, 247, 247);
+        margin-top: 0px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 50;
+        position: relative;
+        top: 0;
+    }
+    /* パンくずリスト */
+    .space-breadcrumb {
+        height: auto;
+        width: 100%;
+    }
+    #breadcrumb {
+        width: 80%;
+    }
+    #breadcrumb ul li {
+        padding: 6px 10px;
+    }
+    #breadcrumb ul li span {
+        font-size: 0.8em;
+    }
+    /* ここからハンバーガー作成 */
+    .hamburger {
+        position: fixed;
+        top: 0px;
+        right: 5px;
+        width: 46px;
+        height: 46px;
+        border-radius: 18px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    .hamburger:hover {
+        background-color: darkblue;
+        border-radius: 100%;
+    }
+    .icon {
+        position: relative;
+        display: block;
+        top: 8px;
+    }
+    .icon:after,
+    .icon:before {
+        content: "";
+        position: absolute;
+        z-index: 1000;
+    }
+    .icon:before {
+        top: 12px;
+    }
+    .icon:after {
+        top: 24px;
+    }
+    .icon,
+    .icon:before,
+    .icon:after {
+        width: 100%;
+        height: 5px;
+        background-color: #ddd;
+        border-radius: 100%;
+        z-index: 1000;
+    }
+    /* ハンバーガーメニューをバツに変更するコード */
+    /* クリック動作はJSで指示 真ん中の棒を透明にする */
+    .hide:before {
+        background-color: transparent;
+    }
+    .rotate {
+        transform: rotate(45deg) translate(7px, 9px);
+    }
+    .rotate:after {
+        transform: rotate(-90deg) translate( 24px, 0px);
+    }
+    .rotate2 {
+        transition: ease 1s;
+        transform: rotate(360deg);
+    }
+    /* ハンバーガーボタンここまで */
+    .font {
+        font-size: 1.4em;
+    }
+}
+
+
+/* ここからスマホ用は480px以下に設定 */
+
+@media screen and (max-width:480px) {
+    .header {
+        height: 50px;
+    }
+    /* パンくずリスト */
+    #breadcrumb ul li {
+        padding: 6px 10px;
+    }
+    #breadcrumb ul li span {
+        font-size: 0.6em;
+    }
+    .left-maxwi {
+        height: 50px;
+    }
+    .left-top {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 58px;
+        height: 48px;
+        z-index: 90;
+    }
+    .hamburger {
+        position: fixed;
+        top: 3px;
+        right: 3px;
+        padding: 1px 1px 1px 1px;
+    }
+    /* right-bottomロゴ消す */
+    .right-bottom {
+        display: none;
+    }
+    /* スマホ用のロゴ出す */
+    .splogo {
+        position: absolute;
+        max-height: 30%;
+        max-width: 20%;
+        width: 40%;
+        right: 5%;
+        /* bottom: 130px; */
+        bottom: 5%;
+        padding-left: 10px;
+        z-index: 10;
+    }
+    /* ここからメイン画像の調整 */
+    #body {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    .maincont {
+        width: 100%;
+    }
+    .mainbox {
+        max-width: 1024px;
+        width: 100%;
+    }
+    #pcslide {
+        display: none;
+    }
+    #spslide {
+        z-index: 500;
+    }
+    .font {
+        font-size: 0;
+        text-align: end;
+        padding-right: 4px;
+        line-height: 2emx;
+    }
+    .font::before {
+        content: "あなたらしく「生きる」";
+        font-size: 18px;
+    }
+    .font2 {
+        font-size: 0;
+        text-align: center;
+        line-height: 20px;
+    }
+    .font2::before {
+        content: "をナビゲートする";
+        font-size: 18px;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    .kan {
+        width: 30px;
+        bottom: 30px;
+        right: 10px;
+    }
+    .card {
+        width: 90%;
+        height: auto;
+        margin: 0 0 24px 0;
+        position: relative;
+        transition: .3s ease-in-out;
+        background-color: white;
+    }
+    .card-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .card-img a {
+        width: 50%;
+        height: auto;
+    }
+    .card-title {
+        width: 50%;
+        position: relative;
+    }
+    .toukou {
+        text-align: center;
+    }
+    .textheight {
+        font-weight: 600;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    .card:hover {
+        box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+        transform: scale(1.01);
+    }
+    .card-space span {
+        display: none;
+    }
+    .line-space {
+        height: 0px;
+    }
+    .popular {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        position: relative;
+        transition: .3s ease-in-out;
+        background-color: white;
+    }
+    .popular img {
+        width: 100%;
+        height: auto;
+    }
+    .popular:hover {
+        box-shadow: 0 0 6px 6px rgba(128, 128, 128, 0.199);
+        transform: scale(1.01);
+    }
+    .nav-links {
+        width: 100%;
+        height: 30px;
+        display: flex;
+    }
+    .nav-links div a {
+        background-color: rgba(0, 0, 255, 0.116);
+        color: blue;
+        font-size: 12px;
+        margin: 10 16px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 6px;
+        text-decoration: none;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+    }
+    .nav-links div a:hover {
+        font-size: 12px;
+    }
+    .over-lay {
+        /* display: none; */
+        position: absolute;
+        z-index: 25;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 180px;
+        border-radius: 6px;
+        opacity: 0.8;
+        background-color: rgb(0, 0, 0);
+    }
+    .over-text {
+        /* display: none; */
+        position: absolute;
+        z-index: 26;
+        text-align: center;
+        top: 80%;
+        width: 100%;
+        color: white;
+    }
+}
+
+
+/* ここまででレスポンシブ対応終了  */
+
+
+/* singleページレスポンシブここから */
+
+@media screen and (min-width:1100px) {
+    .leftside {
+        width: 10%;
+        position: relative;
+    }
+    .left-none {
+        width: 140px;
+        height: 120px;
+        top: -120px;
+        position: absolute;
+        z-index: 60;
+    }
+    .center-line {
+        width: 3%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #body {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    #container-single {
+        width: 90%;
+    }
+    .leftside {
+        width: 20%;
+        position: relative;
+    }
+    .left-none {
+        width: 140px;
+        height: 120px;
+        top: -120px;
+        position: absolute;
+        z-index: 90;
+    }
+    /* singlepage設定　サイドバーレスポンシブ　ここから */
+    .sidebar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .sidebar ul li {
+        line-height: 2em;
+        border-bottom: rgb(111, 111, 252) 0.1px solid;
+        padding-left: 1em;
+        width: 100%;
+    }
+    .sidebar ul li a {
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+    .sidebar h2 {
+        font-size: 18px;
+        text-align: start;
+        left: 0;
+        margin-bottom: 10px;
+    }
+    #s {
+        border: 0;
+        padding: 4px;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        color: #aaa;
+        border: solid 1px #ccc;
+        width: 240px;
+    }
+    #searchsubmit {
+        border: solid 3px #ccc;
+        padding: 5px 10px;
+        font-family: Arial, sans-serif;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+        background-image: -webkit-linear-gradient(top, #ddd, #aaa);
+        background-image: -moz-linear-gradient(top, #ddd, #aaa);
+        background-image: -ms-linear-gradient(top, #ddd, #aaa);
+        background-image: -o-linear-gradient(top, #ddd, #aaa);
+        background-image: linear-gradient(top, #ddd, #aaa);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#aaa', GradientType=0);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .font::before {
+        display: none;
+    }
+    .font2::before {
+        display: none;
+    }
+    .leftside {
+        width: 100%;
+        height: 0px;
+    }
+    .time {
+        font-size: 12px;
+    }
+    #body h1 {
+        margin-top: 16px;
+        font-size: 24px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 36px;
+    }
+    #body h2 {
+        margin-top: 10px;
+        font-size: 1em;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 1.2em;
+    }
+    #body h3 {
+        margin: 12px;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 30px;
+    }
+    #body p {
+        font-size: 0.8em;
+        line-height: normal;
+    }
+    .singlecontent p {
+        line-height: 1.6em;
+    }
+    #s {
+        width: 140px;
+    }
+    .backimg a {
+        font-size: 12px;
+        margin: 10px;
+    }
+}
+
+
+/* ここからがPageCss */
+
+@media screen and (max-width:1100px) {
+    #contact {
+        flex-wrap: wrap;
+    }
+    /* ここからがＷＥＢ開発受注の欄 */
+    .port-container {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 3px;
+        margin: 10px 4px;
+        border: solid 0.5px black;
+        -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+    .port-link {
+        max-width: 90%;
+    }
+    .port-intro {
+        max-width: 90%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .port-text {
+        margin: 3px 8px;
+    }
+    .port-title {
+        width: 20%;
+    }
+    .port-text-th {
+        color: rgba(0, 139, 139, 0.377);
+    }
+    .port-text tr th {
+        vertical-align: middle;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .price {
+        width: 100%;
+    }
+    .price tr th {
+        line-height: 18px;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width:480px) {
+    #frame-sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .nonteku-tema {
+        font-size: 12px;
+    }
+    #nonteku p {
+        line-height: 18px;
+        font-size: 12px;
+    }
+    .nonteku-link {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+    .price {
+        margin: 6px 0;
+        width: 105%;
+    }
+    .price tr th {
+        line-height: 12px;
+        font-size: 9px;
+        padding: 4px 0;
+    }
+    #contact div {
+        max-width: 460px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin: 2px;
+        padding: 5px;
+    }
+    #contact div p {
+        font-size: 14px;
+    }
+    .about-link p {
+        margin-bottom: 16px;
+    }
+    .mw_wp_form {
+        margin-top: 6px;
+    }
+    .contact-submit {
+        font-size: 14px;
+        margin: 0 10px;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        text-decoration: none;
+        background: #668ad8;
+        /*ボタン色*/
+        color: #FFF;
+        border-bottom: solid 2px #627295;
+    }
+    .profile-name {
+        margin: 10px 0px;
+    }
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+    #frame-pc {
+        display: none;
+    }
+    .port-text tr th {
+        line-height: 18px;
+        font-size: 9px;
+    }
+    /* ここからがfooter */
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 5px 0;
+    }
+    footer p {
+        color: white;
+        font-size: 0.8em;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px 0;
+    }
+    footer p a {
+        text-decoration: none;
+        color: white;
+    }
+    footer img {
+        width: 80px;
+        height: 30px;
+    }
+}
